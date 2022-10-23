@@ -1,3 +1,13 @@
+:root {
+  --maincolor: rgb(255, 255, 255);
+  --headerlogosize: 400px;
+  --afblack: rgb(31, 31, 38);
+  --afpurple: rgb(61, 77, 65);
+  --aftest: rgb(255, 0, 153);
+  
+
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,6 +15,81 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+
+.header {
+background-color: var(--maincolor);
+display: grid;
+height: 120px;
+grid-template-columns: var(--headerlogosize) 1fr auto;
+}
+
+.header > * {
+
+  /* border: purple 1px solid; */
+}
+
+.header-logo {
+  display: grid;
+  justify-content: start;
+  align-items: center;
+  padding-left: 20px;
+  /* border: red 1px solid; */
+  
+}
+
+.header-logo img {
+  width: calc(var(--headerlogosize) * .6);
+  /* display: grid;
+  justify-content: end;
+  align-items: center; */
+}
+
+.header-menus {
+  display: grid;
+  /* border: red 1px solid; */
+
+}
+
+.menu-links {
+  /* grid-template-columns: repeat(auto-fit, 100px); */
+  /* grid-template-rows: 1fr; */
+  /* grid-auto-columns: 100px; */
+  display: flex;
+  grid-gap: 30px;
+  padding: 30px;
+  padding-right: 20px;
+  justify-content: end;
+  align-items: center;
+  cursor: default;
+}
+
+.menu-item {
+  /* border: red 1px solid; */
+  transition: .4s;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  transform: scale(1);
+  color: var(--afpurple);
+  
+}
+
+.menu-item:hover {
+  transform: scale(1.02);
+  transform: translateY(-2px);
+  color: var(--afblack);
+
+}
+
+
+
+.contentmain {
+  background-color: var(--maincolor);
+  height: 100vh;
+  /* border: red 1px solid; */
+
 }
 
 code {
