@@ -1,32 +1,29 @@
 import './App.css';
-import logo from "./images/AF_LOGO.png";
+import Footer from './Footer';
+import Header from './Header';
+import Home from './Home';
+import Work from './Work';
+import About from './About';
+import { Route, Routes } from "react-router-dom";
+import Construction from './Construction';
+
+// import logo from "./images/AF_LOGO.png";
+
+
+
 
 function App() {
+  
   return (
-    <div className="App">
-      <header >
-        <div className="header">
-          <div className="header-logo">
-            <img src={logo} className="header-logo" alt="AFACTOR Media" />
-          </div>
-          <div className=""></div>
-          <div className="header-menus">
-            <div className="menu-links">
-              <div className="menu-item">About</div>
-              <div className="menu-item">Work</div>
-              <div className="menu-item">Contact</div>
-              <div className="menu-item">Client Login</div>
-
-            </div>
-
-          </div>
-        </div>
-        <div className="contentmain">
-          Meat
-
-        </div>
-      </header>
-    </div>
+    <>
+      <Header />
+        <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/construction" element={<Construction />} />
+            {/* <Route path="/about" element={<About />} /> */}
+        </Routes>
+      <Footer/>
+    </>
   );
 }
 
