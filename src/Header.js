@@ -21,7 +21,8 @@ export default function Header() {
     return (
     <>
     <div className="header">
-        <div></div>
+    <div className="header-container">
+        {/* <div></div>                             margin spacer  */}
         {/* ---------------------FULL WIDTH LOGO----------------------- */}
             <div className="header-logo-full" onClick={()=>{
                 navigate('/');
@@ -43,14 +44,7 @@ export default function Header() {
             </div>
             <div className="header-spacer"></div>
         {/* ---------------------FULL WIDTH MENU----------------------- */}
-            {/* <div className="header-menu-full">
-                <div className="menu-links">
-                    <div className="menu-item" onClick={() => {console.log('hey')}}>About</div>
-                    <div className="menu-item">Work</div>
-                    <div className="menu-item">Contact</div>
-                    <div className="menu-item">Client Login</div>
-                </div>
-            </div> */}
+
             <div className="header-menu-full">
                 <ul className="menu-links">
                     <li className="menu-item" onClick={() => {navigate('/')}}>Home</li>
@@ -87,8 +81,8 @@ export default function Header() {
                     <li className="menu-item">CLIENT LOGIN</li>
                 </ul>
             </div>
-
-        <div></div>
+        {/* <div></div>                             margin spacer  */}
+    </div>
     </div>
 
     </>

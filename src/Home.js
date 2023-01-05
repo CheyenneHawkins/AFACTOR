@@ -1,17 +1,16 @@
 import swoop from "./images/swoop.svg"
-import factory from "./images/hero-art4.png"
-import Header from "./Header"
+import factory from "./images/lightning1.png"
 import ServicesSection from "./ServicesSection"
+import WhoWeAre from "./WhoWeAre"
+import BrandsBrag from "./BrandsBrag"
 
 export default function Home() {
 
     return (
         <>
         <div className="contentmain">
-            <div className="swoopbg">
-                <img src={swoop} alt='' className="swoop-svg"/>
-                <div className="purplebg"></div>
-            </div>
+            <div className="component-container">
+
                 <div className="hero-main">
                     <div className="hero-text">
                         <span>CONTENT THAT IS</span>
@@ -27,7 +26,9 @@ export default function Home() {
                     </div>
                 </div>
         </div>
-                <ServicesSection />
+            </div>
+                <WhoWeAre />
+                <BrandsBrag />
         </>
 
     )

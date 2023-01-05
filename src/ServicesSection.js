@@ -1,8 +1,12 @@
 import webicon from "./images/web-icon-black.png"
-import branding from "./images/branding.png"
-import computer from "./images/computer.png"
-import creative from "./images/creative.png"
-import animation from "./images/spore.png"
+import branding from "./images/BrandingGraphic.png"
+import computer from "./images/WebGraphic.png"
+import creative from "./images/CreativeGraphic.png"
+import animation from "./images/AnimationGraphic.png"
+// import branding from "./images/PlaceholderCircle.png"
+// import computer from "./images/PlaceholderCircle.png"
+// import creative from "./images/PlaceholderCircle.png"
+// import animation from "./images/PlaceholderCircle.png"
 import { useNavigate } from "react-router-dom";
 
 
