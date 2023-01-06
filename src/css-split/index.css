@@ -3,6 +3,9 @@
 @import "./who.css";
 @import "./utilities.css";
 @import "./brands.css";
+@import "./carousel.css";
+
+
 @font-face {
   font-family: 'Etna';
   src: local('Etna'), url(../fonts/Etna-Sans-serif.otf) format('OpenType');}
